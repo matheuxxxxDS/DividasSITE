@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Dívidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Dívidas</h1>
+        </header>
+
+        <main>
+            <section id="novaDivida">
+                <h2>Adicionar Nova Dívida</h2>
+                <input type="text" id="descricao" placeholder="Descrição da dívida">
+                <input type="number" id="valor" placeholder="Valor da dívida">
+                <button id="adicionarBtn">Adicionar</button>
+            </section>
+
+            <section id="listaDividas">
+                <h2>Dívidas do Mês</h2>
+                
+                <!-- Tabela para listar as dívidas -->
+                <table id="dividasTable">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dividasList">
+                        <!-- As dívidas serão listadas aqui -->
+                    </tbody>
+                </table>
+
+                <!-- Exibir soma total -->
+                <div id="somaTotal">
+                    <h3>Total das Dívidas: <span id="totalDividas">R$ 0.00</span></h3>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
